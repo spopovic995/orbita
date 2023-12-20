@@ -292,6 +292,10 @@ html[data-w-dynpage] [data-w-cloak] {
   color: rgba(0, 0, 0, 0) !important;
 }
 
+.w-code-block {
+  margin: unset;
+}
+
 .w-webflow-badge, .w-webflow-badge * {
   z-index: auto;
   visibility: visible;
@@ -2345,7 +2349,7 @@ textarea.w-input, textarea.w-select {
   text-align: center;
   margin-bottom: 20px;
   font-family: Open Sans, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
 }
 
@@ -2355,12 +2359,18 @@ textarea.w-input, textarea.w-select {
   margin-right: auto;
 }
 
-.div-block-2, .uslugi-wrapper {
+.div-block-2 {
   padding-left: 60px;
   padding-right: 60px;
 }
 
+.uslugi-wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .uslugi-paragraph {
+  text-align: justify;
   font-family: Open Sans, sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -2378,6 +2388,7 @@ textarea.w-input, textarea.w-select {
   font-family: Open Sans, sans-serif;
   font-size: 24px;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .slider {
@@ -2467,6 +2478,7 @@ textarea.w-input, textarea.w-select {
 .columns {
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 20px;
   display: flex;
 }
 
@@ -2523,12 +2535,25 @@ textarea.w-input, textarea.w-select {
   font-family: Open Sans, sans-serif;
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.3;
+}
+
+.image-3 {
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 479px) {
   .hero-section {
+    max-height: 86px;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://assets-global.website-files.com/6538dd5ce56d08c95b525aa7/6538e873724286967f242b33_Hero-background.png");
     background-size: auto, cover;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .brand.w--current {
+    padding-left: 0;
   }
 
   .text-block {
@@ -2551,6 +2576,7 @@ textarea.w-input, textarea.w-select {
 
   .contact-button {
     max-width: 190px;
+    margin-bottom: 20px;
     font-size: 18px;
   }
 
@@ -2564,7 +2590,12 @@ textarea.w-input, textarea.w-select {
     margin-top: 40px;
   }
 
+  .section-uslugi {
+    padding-top: 20px;
+  }
+
   .heading-2 {
+    margin-top: 20px;
     margin-bottom: 40px;
     font-size: 30px;
   }
@@ -2604,6 +2635,11 @@ textarea.w-input, textarea.w-select {
     margin-right: 2px;
   }
 
+  .za-nas-section {
+    min-height: 70vh;
+    padding-top: 10px;
+  }
+
   .paragraph {
     text-align: justify;
     font-size: 14px;
@@ -2618,6 +2654,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .columns {
+    padding-bottom: 0;
     display: block;
   }
 
@@ -2636,6 +2673,8 @@ textarea.w-input, textarea.w-select {
   .column-7 {
     margin-top: 25px;
     margin-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .right-arrow, .left-arrow {
@@ -2648,6 +2687,7 @@ textarea.w-input, textarea.w-select {
 
   .image-3 {
     margin-top: 10px;
+    display: none;
   }
 
   .icon {
@@ -2656,6 +2696,15 @@ textarea.w-input, textarea.w-select {
     bottom: 0%;
     left: 0%;
     right: 0%;
+  }
+
+  .image-4 {
+    padding: 10px 30px;
+  }
+
+  .menu-button {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
